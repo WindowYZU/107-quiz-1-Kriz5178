@@ -92,12 +92,12 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
-        int value = (int) jComboBox1.getSelectedItem();
+        String value =  (String) jComboBox1.getSelectedItem();
         if(equals(value, jSlider1.getValue())){
-            jSlider1.setValue(value);
+            jSlider1.setValue(jComboBox1.getSelectedIndex());
         }  
         else{
-            jSlider1.setValue(value);       
+            jSlider1.setValue(jComboBox1.getSelectedIndex());     
         }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -145,7 +145,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JSlider jSlider1;
     // End of variables declaration//GEN-END:variables
 
-    private boolean equals(int value, int value0) {
+    private boolean equals(String value1, int value) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
